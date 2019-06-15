@@ -1,0 +1,44 @@
+@model Play.Models.LetsPlay
+<html>
+    <head>
+        <title>Some Title</title>
+        <link rel="shortcut icon" type="image/png" href="/Img/Favicon/flash.png"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container mt-5">
+        @using(Html.BeginForm("Save","Play", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+                <div class="form-group row">
+                    <label for="txtFirstname" class="col-md-6">Firstname</label>
+                    @Html.TextBoxFor(m=>m.Firstname, null, new { @id = "txtFirstname", @class = "form-control col-md-6" })
+                </div>
+         <div class="form-group row">
+                    <label for="txtLastname" class="col-md-6">Lastname</label>
+            @Html.TextBoxFor(m=>m.Lastname, null, new { @id = "txtLastname", @class = "form-control col-md-6" })
+                </div>
+                <div class="form-group row">
+                    <label for="txtPhone" class="col-md-6">Phone</label>
+            @Html.TextBoxFor(m=>m.Phone, null, new { @id = "txtPhone", @type = "Number", @class = "form-control col-md-6"  })
+                </div>
+                <div class="form-group row">
+                    <label for="txtEmail" class="col-md-6">Email</label>
+            @Html.TextBoxFor(m=>m.Email, null, new { @id = "txtEmail", @type = "Email", @class = "form-control col-md-6" })
+                </div>
+                <div class="form-group row">
+                    <label for="fileDocument" class="col-md-6">Document</label>
+            @Html.TextBoxFor(m=>m.Document, null, new { @id = "fileDocument", @type = "file", @class = "form-control col-md-6" })
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-6"></label>
+            <input id="btnSave" type="button" value="Start Play" class="btn btn-primary">
+            </div>
+        }
+        </div>
+        <script src="/Scripts/index.js"></script>
+    </body>
+</html>

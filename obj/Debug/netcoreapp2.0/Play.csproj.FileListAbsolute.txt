@@ -1,0 +1,10 @@
+D:\Play\bin\Debug\netcoreapp2.0\Play.deps.json
+D:\Play\bin\Debug\netcoreapp2.0\Play.runtimeconfig.json
+D:\Play\bin\Debug\netcoreapp2.0\Play.runtimeconfig.dev.json
+D:\Play\bin\Debug\netcoreapp2.0\Play.dll
+D:\Play\bin\Debug\netcoreapp2.0\Play.pdb
+D:\Play\obj\Debug\netcoreapp2.0\Play.csproj.CoreCompileInputs.cache
+D:\Play\obj\Debug\netcoreapp2.0\Play.AssemblyInfoInputs.cache
+D:\Play\obj\Debug\netcoreapp2.0\Play.AssemblyInfo.cs
+D:\Play\obj\Debug\netcoreapp2.0\Play.dll
+D:\Play\obj\Debug\netcoreapp2.0\Play.pdb
